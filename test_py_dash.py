@@ -18,7 +18,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, server=server)
 
 app.scripts.config.serve_locally = True
-
+# You will have to have the .html files saved into the /static folder reachable by this script
 app.layout = html.Div([
     html.A('Navigate to google.com', href='http://google.com', target='_blank'),
     html.B(html.Label("Comptrain")),
